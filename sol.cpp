@@ -22,6 +22,8 @@ void print(Node* head) {
 void combine(Node* head, Node* head2) {
 	Node* link;
 	link=head;
+	if(head==NULL||head2==NULL)
+		return;
 	while(link->next!=NULL)
 		link=link->next;
 	link->next=head2;
